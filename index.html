@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ann homepage</title>
+   
+    <style>
+
+.antrmk {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.antrmk h1 {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+   
+}
+
+.gambar {
+
+    width: 100%;   
+
+}
+
+.gambar img {
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left; /* Mengapungkan gambar ke kiri */
+       margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+
+}
+
+.textt {
+     display: inline-block;
+            vertical-align: middle; 
+
+}
+
+.textt p {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+
+.elemen {
+    border: 4px dotted blue;
+    background-color: #111;
+    filter: opacity(80%);
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg);
+    background-size: cover;
+}
+
+.solo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.solo li {
+    float: left;
+}
+
+.solo li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.solo li a:hover {
+    background-color: #111;
+}
+
+
+/* Keyframes untuk fade in */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Mulai dari transparan */
+    }
+    to {
+        opacity: 1; /* Berakhir pada tidak transparan */
+    }
+}
+
+/* Kelas yang ditambahkan untuk animasi fade in saat halaman dimuat */
+.fade-in {
+    animation: fadeIn 1s ease-in; /* Animasi fade in dengan durasi 1 detik */
+}
+
+/* Keyframes untuk fade out */
+@keyframes fadeOut {
+    from {
+        opacity: 1; /* Mulai dari tidak transparan */
+    }
+    to {
+        opacity: 0; /* Berakhir pada transparan */
+    }
+}
+
+/* Kelas untuk animasi fade out */
+.fade-out {
+    animation: fadeOut 0.5s ease-out; /* Animasi fade out dengan durasi 0.5 detik */
+}
+
+    </style>
+</head>
+<body>
+    
+    <ul class="solo">
+        <li><a href="halaman/gallery.html">GALERY</a></li>
+        <li><a href="halaman/index.php">BLOG</a></li>
+        <li><a href="halaman/contact.html">CONTACT</a></li>
+    </ul>
+
+
+    <br><br><br><br>
+
+        <div class="elemen">
+
+    <div class="antrmk">
+        <h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
+    </div>
+
+    <div class="gambar fade-in">
+
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/769486485247264412/4CEA7943181CB95D3594E90A9C675D264553036F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="hallo">
+    
+    </div>
+
+    <div class="textt fade-in">
+
+        <p>hallo, Perkenalkan nama saya Andrew E Daniel T <br>
+            Saya Mahasiswa di universitas Sam Ratulangi Angkatan 23</p>
+        <br><br>
+        <p><strong>Menjelajahi Tanpa Batas, Menginspirasi Setiap Langkah.</strong></p>
+        <p>Kami percaya pada kekuatan cerita dan petualangan. <br>
+             Di sini, Anda akan menemukan koleksi pengalaman <br>
+              yang akan memperkaya pengetahuan dan memperluas <br>
+               cakrawala Anda.</p>
+
+    </div>
+        </div>
+
+<script>
+  // Mendengar saat halaman akan ditutup
+window.addEventListener('beforeunload', function() {
+    // Tambahkan kelas fade out ke seluruh halaman
+    document.body.className = 'fade-out';
+});  
+</script>
+
+</body> 
+</html>

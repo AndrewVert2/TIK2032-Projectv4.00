@@ -1,0 +1,326 @@
+.hal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.hal li {
+    float: left;
+}
+
+.hal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.hal li a:hover {
+    background-color: #111;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .game-icon {
+    width: 100px;
+    margin: 10px;
+  }
+  
+  .game-icon:hover {
+    transform: scale(1.1);
+  }
+
+.jdl {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+  body {
+    background-image: url(https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg);
+    background-size: cover;
+  }
+
+
+
+  .article {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .article article {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #111;
+    filter: opacity(90%);
+  }
+  
+  .article h2 {
+    color: #416dff;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  
+  .article p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .article a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .article a:hover {
+    text-decoration: underline;
+  }
+  
+  .daptar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+  }
+  
+  .daptar li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .daptar li:last-child {
+    border-bottom: none;
+  }
+  
+  .daptar a {
+    text-decoration: none;
+    color: #27ff20;
+    font-size: 18px;
+  }
+  
+  .daptar a:hover {
+    color: #1e90ff;
+  }
+  
+
+
+
+
+
+  .hu-tao {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #111;
+    filter: opacity(80%);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .support-option {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .support-option h2 {
+    color: #efefef;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .support-option p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  
+  .support-option a {
+    display: inline-block;
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .support-option a:hover {
+    background-color: #187bcd;
+  }
+
+
+
+  .comment-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#comment-list {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex; /* Untuk menempatkan tombol hapus di sebelah kanan */
+    justify-content: space-between;
+}
+
+
+
+
+.thumbnails {
+  display: flex; /* Tampilkan gambar dalam satu baris */
+  justify-content: center; /* Pusatkan gambar */
+  gap: 10px; /* Jarak antar gambar */
+}
+
+.thumbnails img {
+  width: 100px; /* Ukuran thumbnail */
+  height: 100px;
+  cursor: pointer; /* Mengubah kursor menjadi pointer */
+}
+
+.lightbox {
+  display: none; /* Sembunyikan lightbox secara default */
+  position: fixed; /* Tetap di tempat meskipun halaman digeser */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+  justify-content: center; /* Pusatkan konten */
+  align-items: center; /* Pusatkan konten */
+  flex-direction: column; /* Atur konten secara vertikal */
+}
+
+.lightbox img {
+  max-width: 90%; /* Batas ukuran gambar */
+  max-height: 90%; /* Batas ukuran gambar */
+}
+
+.lightbox-caption {
+  color: white;
+  margin-top: 10px;
+}
+
+.close {
+  position: absolute; /* Tombol tutup di sudut kanan atas */
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5); /* Tombol transparan */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  position: absolute; /* Tombol sebelumnya di sebelah kiri */
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  position: absolute; /* Tombol berikutnya di sebelah kanan */
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+
+
+/* Keyframes untuk fade in */
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Mulai dari transparan */
+  }
+  to {
+      opacity: 1; /* Berakhir pada tidak transparan */
+  }
+}
+
+/* Kelas yang ditambahkan untuk animasi fade in saat halaman dimuat */
+.fade-in {
+  animation: fadeIn 1s ease-in; /* Animasi fade in dengan durasi 1 detik */
+}
+
+/* Keyframes untuk fade out */
+@keyframes fadeOut {
+  from {
+      opacity: 1; /* Mulai dari tidak transparan */
+  }
+  to {
+      opacity: 0; /* Berakhir pada transparan */
+  }
+}
+
+/* Kelas untuk animasi fade out */
+.fade-out {
+  animation: fadeOut 0.5s ease-out; /* Animasi fade out dengan durasi 0.5 detik */
+}
